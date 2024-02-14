@@ -11,7 +11,7 @@ const timeStamp = downloadBtn.getAttribute("data-timestamp");
     
     downloadBtn.addEventListener("click", function(){
         console.log(timeStamp);
-        let pdfUrl = `/merged/${timeStamp}.pdf`
+        let pdfUrl = `../merged/${timeStamp}.pdf`
         let a = document.createElement('a');
         a.href = pdfUrl;
         a.download = `${timeStamp}.pdf`;
