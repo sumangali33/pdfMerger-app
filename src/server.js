@@ -7,6 +7,7 @@ const {router :mergeRoute} = require('./Routes/merge.router.js');
 const downloadsRoute = require('./Routes/downloads.router.js');
 const deleteRoute = require('./Routes/delete.router.js');
 app.use('/show',express.static('merged'));
+app.use('/downloads',express.static('./src/public/merged'));
 app.use(express.static('./src/public'));
 app.use(cors());
 app.use(express.json());
