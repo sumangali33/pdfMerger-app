@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download PDF</title>
+  <link rel="stylesheet" href="../CSSfiles/download.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="main-container">
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div id="spinner" class="spinner-border " style="display:block; width: 4rem; height: 4rem; border-width: 7px;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <span class="SpinnerText" style="display:block;">Merging PDF's...</span>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <Button id="downloadBtn" class="btn btn-primary download-btn" style="display: none;" data-timestamp="<%= timeStamp %>">Download</Button>
+  <span class="text" style="display: none;">Click Download button to download Merged PDF</span>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="../javaScript/download.js"></script>
+</body>
+</html>

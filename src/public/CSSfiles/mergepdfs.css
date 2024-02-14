@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.mainitem{
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230); ;
+}
+
+
+.container { 
+    display: grid; box-sizing: 
+    border-box; height: 100vh; 
+    grid-template-columns: 70% 30%; 
+}
+.pdfList{
+    background-color: rgb(255, 255, 255); 
+    overflow-y: auto;
+    height: calc(100vh - 30px); 
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+.scrollable {
+    display: grid; 
+    grid-template-columns: 20% 20% 20% 20%; 
+    padding: 30px; 
+    gap: 30px; 
+    justify-content: center; 
+}
+h3{
+    text-align: center; 
+    font-size:40px; 
+    background-color: white; 
+
+}
+
+.pdf-card{
+    display: flex; 
+    align-items: center; 
+    padding: 20px; margin: 10px; 
+    background-color: rgb(245, 245, 245); 
+    border-radius: 10px; cursor: pointer; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.pdf-card:hover{
+    box-shadow: 8px 8px 6px rgba(65, 65, 65, 0.3);
+}
+
+.pdf-card i {
+    margin-right: 10px; 
+    font-size: 35px; 
+    margin-left: 10px; 
+}
+.pdf-card p {
+    margin: 0;
+    font-size: 18px;
+}
+
+p{
+    margin-right: 10px;
+}
+.rightSection{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#fileInput{
+    display: none;
+}
+#add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #eb2626;
+    border-radius: 50%;
+    border: 2px solid #f1f1f3;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+#add-button:hover{
+    background-color:#e60303;
+}
+#mergePdfs {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    background-color: rgb(14, 161, 130);
+    padding: 25px;
+    margin: 20px;
+    font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#mergePdfs:hover {
+    transform: scale(1);
+    border: 4px solid rgba(221, 143, 69, 0.822);
+    background-color:rgb(15, 156, 126); ;
+}
+
+.icon-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+}
+
+.btn-section{
+    display: flex;
+    height:30%;
+    flex-direction: column;
+    justify-content: center;
+    margin:10px;
+}
+.para{
+    padding: 10px;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    color:rgb(117, 117, 117);
+}
+.main-para{
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid rgb(129, 231, 209);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(129, 231, 209);
+    margin-top: -10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
